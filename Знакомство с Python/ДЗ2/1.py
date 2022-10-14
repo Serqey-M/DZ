@@ -6,10 +6,10 @@ list = []
 for i in str(number):
     list.append(i)
 list.remove('.')
-if list[0]=='-':
+if list[0] == '-':
     list.remove('-')
 sum = 0
 for i in list:
-    sum+=int(i)
+    sum += int(i)
 os.system('CLS')
 print(f'{number} -> {sum}')
