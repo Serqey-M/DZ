@@ -9,11 +9,8 @@ positions = [int(line) for line in file]
 file.close()
 result = 1
 list1 = []
-i = 0
-while i < len(positions):
+for i in range(len(positions)):
     result *= list[positions[i]-1]
-    print(list[positions[i]-1])
-    i += 1
 os.system('CLS')
 print(f'список: {list}')
 print(f'позиции: {positions}')
