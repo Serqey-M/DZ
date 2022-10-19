@@ -11,4 +11,4 @@ while abs(Pi-Pi1) > d:
         n += 2
         Pi1 = Pi
         Pi = Pi1-4/n
-print(Pi)
+print(f'при d = {d}, Пи = {Pi}')
