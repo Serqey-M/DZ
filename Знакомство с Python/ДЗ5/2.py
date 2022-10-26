@@ -16,7 +16,7 @@ while initial_quantity > 0:
             input(f'не допустимое значение, ход игрока 1 (1-{max_step}): '))
     initial_quantity -= player_1
     if initial_quantity < 1:
-        print('Игрок 1 подедил')
+        print('Игрок 1 победил')
     else:
         os.system('CLS')
         print(f'Осталось конфет: {initial_quantity}')
@@ -26,4 +26,4 @@ while initial_quantity > 0:
                 input(f'не допустимое значение, ход игрока 2 (1-{max_step}): '))
         initial_quantity -= player_2
         if initial_quantity < 1:
-            print('Игрок 2 подедил')
+            print('Игрок 2 победил')
