@@ -20,15 +20,16 @@ while initial_quantity > 0:
         print(f'Осталось конфет: {initial_quantity}')
         step_player = int(input(f'ход игрока (1-{max_step}):'))
         while step_player < 1 or step_player > max_step:
-            step_player = int(input(f'не допустимое значение, ход игрока (1-{max_step}): '))
+            step_player = int(
+                input(f'не допустимое значение, ход игрока (1-{max_step}): '))
         initial_quantity -= step_player
         toss = 1
         if initial_quantity < 1:
             print('Игрок победил')
     else:
         os.system('CLS')
-        if initial_quantity%(max_step+1)>0:
-            step_bot= initial_quantity%(max_step+1)
+        if initial_quantity % (max_step+1) > 0:
+            step_bot = initial_quantity % (max_step+1)
         else:
             step_bot = max_step - step_player + 1
         initial_quantity -= step_bot
