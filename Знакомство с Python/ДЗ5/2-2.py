@@ -15,40 +15,22 @@ else:
     print('Первым ходит бот')
 input('Нажмите ввод для начала игры')
 os.system('CLS')
-if toss == 0 :
-    print(f'Осталось конфет: {initial_quantity}')
-    step_player = int(input(f'ход игрока (1-{max_step}):'))
-    while step_player < 1 or step_player > max_step:
-        step_player = int(input(f'не допустимое значение, ход игрока (1-{max_step}): '))
-    initial_quantity -= step_player
-    if initial_quantity < 1:
-        print('Игрок победил')
-    step_bot= initial_quantity%(max_step+1)
-    print(f'ход бота: {step_bot}')
-    if initial_quantity < 1:
-        print('Бот победил')
-else:
-    step_bot= initial_quantity%(max_step+1) 
-    print(f'ход бота: {step_bot}')
-    toss = 1
-    if initial_quantity < 1:
-        print('Бот победил')
-
-
 while initial_quantity > 0:
     if toss == 0:
         print(f'Осталось конфет: {initial_quantity}')
         step_player = int(input(f'ход игрока (1-{max_step}):'))
         while step_player < 1 or step_player > max_step:
-            step_player = int(
-                input(f'не допустимое значение, ход игрока (1-{max_step}): '))
+            step_player = int(input(f'не допустимое значение, ход игрока (1-{max_step}): '))
         initial_quantity -= step_player
         toss = 1
         if initial_quantity < 1:
             print('Игрок победил')
     else:
         os.system('CLS')
-        step_bot = max_step - step_player + 1
+        if initial_quantity%(max_step+1)>0:
+            step_bot= initial_quantity%(max_step+1)
+        else:
+            step_bot = max_step - step_player + 1
         initial_quantity -= step_bot
         toss = 0
         print(f'ход бота: {step_bot}')
