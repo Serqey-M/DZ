@@ -1,13 +1,9 @@
 # Создайте программу для игры в ""Крестики-нолики"".
-
 import os
-
-
 game_field = {'X0': ' ', 'X1': '1', 'X2': '2', 'X3': '3',
               'A0': 'A', 'A1': '-', 'A2': '-', 'A3': '-',
               'B0': 'B', 'B1': '-', 'B2': '-', 'B3': '-',
               'C0': 'C', 'C1': '-', 'C2': '-', 'C3': '-'}
-
 print(game_field['X0'] + '  ' + game_field['X1'] +
       '  ' + game_field['X2']+'  ' + game_field['X3'])
 print(game_field['A0'] + '  ' + game_field['A1'] +
@@ -16,7 +12,6 @@ print(game_field['B0'] + '  ' + game_field['B1'] +
       '  ' + game_field['B2']+'  ' + game_field['B3'])
 print(game_field['C0'] + '  ' + game_field['C1'] +
       '  ' + game_field['C2']+'  ' + game_field['C3'])
-
 i = 0
 while i < 9:
     step1 = input('Ход игрока 1(пример - А1): ')
