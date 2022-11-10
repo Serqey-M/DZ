@@ -6,4 +6,4 @@ sum = 0
 for i in dict:
     sum += dict[i]
 os.system('CLS')
-print(f'n = 4: {dict} \nСумма {round(sum,2)}')
+print(f'n = {n}: {dict} \nСумма {round(sum,2)}')
