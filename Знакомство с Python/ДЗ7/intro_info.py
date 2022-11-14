@@ -1,31 +1,25 @@
-def info ():
-    info = []
+def info1():
+    info = dict()
     surname = input('Введите фамилию: ')
-    info.append(surname)
+    info['Фамилия'] = surname
     name = input('Введите имя: ')
-    info.append(name)
+    info['Имя'] = name
     patronymic = input('Введите Отчество: ')
-    info.append(patronymic)
+    info['Отчество'] = patronymic
     phone_number = '+7'
     x = False
     while not x:
         try:
-            phone_number = input('Введите номер телефона: ')
-            if len(phone_number) != 10:
+            number = input('Введите номер телефона: ')
+            if len(number) != 10:
                 print('В номере телефона должен содержать 10 цифр')
             else:
-                phone_number = int(phone_number)
+                number = int(number)
                 x = True
         except:
             print('Не коректный номер телефона')
-    info.append(phone_number)
+    phone_number+=str(number)
+    info['Номер телефона'] = phone_number
     description = input('Введите описание: ')
-    info.append(description)
+    info['Описание'] = description
     return info
-
-# x= info()   
-# print(x) 
-# print(x[3])
-# # z = open('text.txt', 'a')
-# # z.write(str(x))
-# # z.close()
