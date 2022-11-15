@@ -1,25 +1,36 @@
-def info1():
+def info():
     info = dict()
     surname = input('Введите фамилию: ')
-    info['Фамилия'] = surname
+    info['Фамилия'] = surname.title()
     name = input('Введите имя: ')
-    info['Имя'] = name
+    info['Имя'] = name.title()
     patronymic = input('Введите Отчество: ')
-    info['Отчество'] = patronymic
-    phone_number = '+7'
-    x = False
-    while not x:
-        try:
-            number = input('Введите номер телефона: ')
-            if len(number) != 10:
-                print('В номере телефона должен содержать 10 цифр')
-            else:
-                number = int(number)
-                x = True
-        except:
-            print('Не коректный номер телефона')
-    phone_number+=str(number)
-    info['Номер телефона'] = phone_number
+    info['Отчество'] = patronymic.title()
+
+    i=1
+    z='Y'
+    while z=='Y'or z =='Д':
+        phone_number = '+7'
+        x = False
+        while not x:
+            try:
+                number = input('Введите номер телефона: ')
+                if len(number) == 11 and number[0]=='8':
+                    number = number[1:]
+                elif len(number) == 12 and number[:2]=='+7':
+                    number = number[2:]
+                if len(number) != 10:
+                    print('Не коректный номер телефона')
+                else:
+                    number = int(number)
+                    x = True
+            except:
+                print('Не коректный номер телефона')
+        phone_number+=str(number)
+        info[f'Номер телефона {i}'] = phone_number
+        i+=1
+        z=input('Желаете ввести еще один номер? (да = Y или Д; нет - любая клавиша): ').upper()
+
     description = input('Введите описание: ')
-    info['Описание'] = description
+    info['Описание'] = description.title()
     return info
