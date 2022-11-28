@@ -78,7 +78,7 @@ def book_(message):
         bot.register_next_step_handler(message, print1)
     else:
         bot.send_message(message.chat.id, 'Что искать:')
-        bot.register_next_step_handler(message, print2)
+        # bot.register_next_step_handler(message, print2)
 def print1 (message):
     x = message.text
     with open('Phonebook_1.txt', 'r', encoding='utf-16') as file:
