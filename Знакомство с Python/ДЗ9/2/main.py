@@ -1,5 +1,4 @@
 import telebot
-import intro_info
 
 bot=telebot.TeleBot('5816935308:AAEeJ0UHLqScP90nBMLRA3WVGAx5rov4J3c')
 
