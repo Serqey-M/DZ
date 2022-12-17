@@ -1,6 +1,6 @@
 import telebot
 
-bot=telebot.TeleBot('5816935308:AAEeJ0UHLqScP90nBMLRA3WVGAx5rov4J3c')
+bot=telebot.TeleBot('')
 
 info = dict()
     

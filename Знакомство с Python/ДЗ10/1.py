@@ -3,7 +3,7 @@
 import telebot
 import datetime
 
-bot = telebot.TeleBot('5816935308:AAEeJ0UHLqScP90nBMLRA3WVGAx5rov4J3c')
+bot = telebot.TeleBot('')
 num_1 = 0
 num_2 = 0
 complex_num_1 = []
