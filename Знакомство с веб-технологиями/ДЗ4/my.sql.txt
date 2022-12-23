@@ -1,0 +1,22 @@
+-- create
+CREATE TABLE CLASSMATES (
+  id INTEGER PRIMARY KEY,
+  name TEXT NOT NULL,
+  age FLOAT NOT NULL,
+  address TEXT NOT NULL
+);
+
+-- insert
+INSERT INTO CLASSMATES VALUES (01, 'Сергей', '37', 'Арзамас');
+INSERT INTO CLASSMATES VALUES (02, 'Иван', '30', 'Москва');
+INSERT INTO CLASSMATES VALUES (03, 'Антон', '18', 'Москва');
+INSERT INTO CLASSMATES VALUES (04, 'Петр', '17', 'Москва');
+INSERT INTO CLASSMATES VALUES (05, 'Владимир', '35', 'Москва');
+INSERT INTO CLASSMATES VALUES (06, 'Дмитрий', '25', 'Нижний Новгород');
+INSERT INTO CLASSMATES VALUES (07, 'Роман', '19', 'Сочи');
+INSERT INTO CLASSMATES VALUES (08, 'Анна', '20', 'Киров');
+INSERT INTO CLASSMATES VALUES (09, 'Мария', '21', 'Москва');
+INSERT INTO CLASSMATES VALUES (10, 'Светлана', '22', 'Сасово');
+
+-- fetch 
+SELECT name FROM CLASSMATES WHERE address = 'Москва' AND age >= 18 AND age < 30;
