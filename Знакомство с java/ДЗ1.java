@@ -39,10 +39,6 @@ public class ДЗ1 {
 
     // Реализация в разных методах
     public static void main(String[] args) {
-       int i = Random(); 
-       int n = number_highest_bit(i);
-       int [] m1 = multiples(i, n);
-       int [] m2 = non_multiples(i, n);
     }
     public static int Random() {
         return new Random().nextInt(2000);   
