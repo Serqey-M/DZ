@@ -10,7 +10,7 @@ import java.util.Random;
 
 public class ДЗ3 {
 
-    public static <T> void main(String[] args) {
+    public static void main(String[] args) {
         // 1.
         System.out.println("Задание 1");
         Random rnd = new Random();
