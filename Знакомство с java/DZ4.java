@@ -89,11 +89,11 @@ public class DZ4 {
                     max = copi_age.get(j);
                     ind_max = j;
                 }
-                copi_age.add(i, copi_age.get(ind_max));
-                copi_age.remove(ind_max + 1);
-                index.add(i, index.get(ind_max));
-                index.remove(ind_max + 1);
             }
+            copi_age.add(i, copi_age.get(ind_max));
+            copi_age.remove(ind_max + 1);
+            index.add(i, index.get(ind_max));
+            index.remove(ind_max + 1);
         }
         for (int i = 0; i < index.size(); i++) {
 
