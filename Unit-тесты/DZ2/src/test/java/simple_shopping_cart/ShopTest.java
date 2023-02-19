@@ -12,8 +12,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import static org.assertj.core.api.Assertions.*;
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertThrows;
 
 class ShopTest {
 
@@ -71,8 +69,10 @@ class ShopTest {
         // Act (Выполнение)
 
         // Assert (Проверка утверждения)
-        assertThatThrownBy(() -> cart.addProductToCartByID(13)).isInstanceOf(RuntimeException.class).hasMessage("Не найден продукт с id: 13");;
+        assertThatThrownBy(() -> cart.addProductToCartByID(13)).isInstanceOf(RuntimeException.class).hasMessage("Не найден продукт с id: 13");
+        ;
     }
+
     @ParameterizedTest
     @ValueSource(ints = {-1, 0, 13})
     void incorrectProductSelectionCausesException1(int number) {
@@ -82,6 +82,7 @@ class ShopTest {
         // Act (Выполнение)
 
         // Assert (Проверка утверждения)
-        assertThatThrownBy(() -> cart.addProductToCartByID(number)).isInstanceOf(RuntimeException.class).hasMessage("Не найден продукт с id: %s", number);;
+        assertThatThrownBy(() -> cart.addProductToCartByID(number)).isInstanceOf(RuntimeException.class).hasMessage("Не найден продукт с id: %s", number);
+        ;
     }
-    }
+}
