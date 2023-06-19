@@ -1,0 +1,18 @@
+{
+	"item": {
+		"id": 14055,
+		"firstName": "Local",
+		"lastName": "Map",
+		"username": "Map Local",
+		"phone": "83333333333",
+		"status": "Pasiv",
+		"sex": "female",
+		"birthDate": "2023-06-18T00:00:00+00:00",
+		"avatar": {
+			"id": 27860,
+			"cdnUrl": "http://test-stand.gb.ru/files/public/image/0331067d4885beb02f65d6733e0a6a3b.jpg"
+		},
+		"updatedAt": "2023-06-18T22:25:36+00:00",
+		"createdAt": "2023-05-22T21:10:24+00:00"
+	}
+}
