@@ -1,0 +1,8 @@
+address: https://test-stand.gb.ru
+browser: chrome
+sleep_time: 3
+implicitly_wait: 10
+username: Sxcvb
+password: 6c0cf2dc81
+new_post_description: Нижегородская область
+new_post_content: Арзамас
