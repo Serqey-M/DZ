@@ -1,0 +1,35 @@
+= 2023-09-06 01:47:01 INFO ====== WebDriver manager ======
+= 2023-09-06 01:47:13 INFO Get LATEST chromedriver version for google-chrome
+= 2023-09-06 01:47:13 INFO Get LATEST chromedriver version for google-chrome
+= 2023-09-06 01:47:13 INFO There is no [win64] chromedriver "116.0.5845.141" for browser google-chrome "116.0.5845.141" in cache
+= 2023-09-06 01:47:13 INFO Get LATEST chromedriver version for google-chrome
+= 2023-09-06 01:47:13 INFO WebDriver version 116.0.5845.96 selected
+= 2023-09-06 01:47:13 INFO Modern chrome version https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/116.0.5845.96/win32/chromedriver-win32.zip
+= 2023-09-06 01:47:13 INFO About to download new driver from https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/116.0.5845.96/win32/chromedriver-win32.zip
+= 2023-09-06 01:47:14 INFO Driver downloading response is 200
+= 2023-09-06 01:47:15 INFO Get LATEST chromedriver version for google-chrome
+= 2023-09-06 01:47:15 INFO Driver has been saved in cache [C:\Users\User\.wdm\drivers\chromedriver\win64\116.0.5845.141]
+= 2023-09-06 01:47:16 INFO Test1 Starting
+= 2023-09-06 01:47:16 INFO Send test to element //*[@id="login"]/div[1]/label/input
+= 2023-09-06 01:47:17 INFO Send test to element //*[@id="login"]/div[2]/label/input
+= 2023-09-06 01:47:17 INFO Click login button
+= 2023-09-06 01:47:17 INFO Found text 401 in error field //*[@id="app"]/main/div/div/div[2]/h2
+= 2023-09-06 01:47:17 INFO Test2 Starting
+= 2023-09-06 01:47:17 INFO Send Sxcvb to element //*[@id="login"]/div[1]/label/input
+= 2023-09-06 01:47:18 INFO Send 6c0cf2dc81 to element //*[@id="login"]/div[2]/label/input
+= 2023-09-06 01:47:18 INFO Click login button
+= 2023-09-06 01:47:19 INFO Found text Hello, Sxcvb in error field //*[@id="app"]/main/nav/ul/li[3]/a
+= 2023-09-06 01:47:19 INFO Test3 Starting
+= 2023-09-06 01:47:20 INFO Click create new post button
+= 2023-09-06 01:47:20 INFO Send 2023-09-06 01:47:20.331720 to element /html/body/div/main/div/div/form/div/div/div[1]/div/label/input
+= 2023-09-06 01:47:20 INFO Send Нижегородская область to element /html/body/div/main/div/div/form/div/div/div[2]/div/label/span/textarea
+= 2023-09-06 01:47:20 INFO Send Арзамас to element /html/body/div/main/div/div/form/div/div/div[3]/div/label/span/textarea
+= 2023-09-06 01:47:20 INFO Click save button
+= 2023-09-06 01:47:21 INFO Found text 2023-09-06 01:47:20.331720 in field //*[@id="app"]/main/div/div[1]/h1
+= 2023-09-06 01:47:21 INFO Test4 Starting
+= 2023-09-06 01:47:21 INFO Click Contact
+= 2023-09-06 01:47:21 INFO Send Sxcvb to element /html/body/div[1]/main/div/div/form/div[1]/label/input
+= 2023-09-06 01:47:21 INFO Send 123@mail.ru to element /html/body/div[1]/main/div/div/form/div[2]/label/input
+= 2023-09-06 01:47:21 INFO Send Нижегородская область to element /html/body/div[1]/main/div/div/form/div[3]/label/span/textarea
+= 2023-09-06 01:47:21 INFO Click Contact btn
+= 2023-09-06 01:47:22 INFO Form successfully submitted
