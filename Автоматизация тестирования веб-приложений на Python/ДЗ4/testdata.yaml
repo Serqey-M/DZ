@@ -1,0 +1,9 @@
+address: https://test-stand.gb.ru
+sleep_time: 1
+browser: firefox
+username: Sxcvb
+password: 6c0cf2dc81
+bad_login: test
+name: Nikolay Eremeev
+email: test@mail.ru
+content: Test information
